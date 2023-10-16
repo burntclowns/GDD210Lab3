@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Hernandez_210Lab3.unity
+    guid: 612d20a9efe892843b439960d77b5d86
   m_configObjects: {}
