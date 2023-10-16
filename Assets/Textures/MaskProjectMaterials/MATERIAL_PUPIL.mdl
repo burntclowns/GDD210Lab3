@@ -1,0 +1,15 @@
+mdl 1.6;
+
+import ::adobe::materials::*;
+import ::base::*;
+import ::state::*;
+import ::tex::*;
+
+export material material_pupil(*)
+  = ::adobe::materials::standard(
+    emission: 100.f,
+    scatter_distance: 0.5f,
+    base_color: ::base::file_texture(texture_2d("MATERIAL_PUPIL/MATERIAL_PUPIL_base_color.png", ::tex::gamma_srgb), color(0.f, 0.f, 0.f), color(1.f, 1.f, 1.f), ::base::mono_average, ::base::transform_coordinate(::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)), ::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))), float2(0.f, 1.f), float2(0.f, 1.f), ::tex::wrap_repeat, ::tex::wrap_repeat, false).tint,
+    emission_color: ::base::file_texture(texture_2d("MATERIAL_PUPIL/MATERIAL_PUPIL_emission_color.png", ::tex::gamma_srgb), color(0.f, 0.f, 0.f), color(1.f, 1.f, 1.f), ::base::mono_average, ::base::transform_coordinate(::base::rotation_translation_scale(float3(0.f), float3(0.f), float3(1.f)), ::base::texture_coordinate_info(::state::texture_coordinate(0), ::state::texture_tangent_u(0), ::state::texture_tangent_v(0))), float2(0.f, 1.f), float2(0.f, 1.f), ::tex::wrap_repeat, ::tex::wrap_repeat, false).tint,
+    roughness: 0.0509804f
+  );
